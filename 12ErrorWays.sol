@@ -26,7 +26,7 @@ contract ErrorWays{
     }
 
     //在这里有个函数调用了这个方法，改变了状态函数num的值，导致assert的结果为false
-    //这就导致assert(num == 123)代码错误，会返还gas并撤销assert当前的状态值
+    //这就导致assert(num == 123)代码错误，会返还本次断言消耗的gas并撤销assert当前的状态值
     function foo() public  returns(uint){
         num +=1;
         return num;
