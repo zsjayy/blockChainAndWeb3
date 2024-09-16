@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getStruct",
+				"outputs": [
+					{
+						"internalType": "uint8[5]",
+						"name": "",
+						"type": "uint8[5]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stru_b",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newStr",
+						"type": "string"
+					}
+				],
+				"name": "updateStruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"22Storage.sol": "Storage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"22Storage.sol": {
+			"keccak256": "0x6f1278afdf2b1d7b92d3eec0669023f91f647cf2bd0518832ee2196c5ff71362",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2f3177f90091ae2e8c7a22121db8427fb9a26914a60cdc98b931e9bffc56a069",
+				"dweb:/ipfs/QmTgR4xAVNT6iSFPDj3UNmJmvHdBKgLD6Yky9EauxNwBSu"
+			]
+		}
+	},
+	"version": 1
+}
