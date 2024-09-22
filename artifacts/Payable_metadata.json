@@ -7,56 +7,49 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "example",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "queryBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "receiveEther",
 				"outputs": [],
-				"stateMutability": "view",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "example2",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "externalFun",
+				"name": "recipient",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address payable",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "publicFun",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "z",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -72,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"30Visibility.sol": "C"
+			"31Payable.sol": "Payable"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"30Visibility.sol": {
-			"keccak256": "0x31908c6666b1fe313776542576c7a50df8ce2650d13d13ce6b562cba7e8b7a7e",
+		"31Payable.sol": {
+			"keccak256": "0x14ba43af18a460ada6908c4ad234c8f366dc3fe5969bbeaf34c7a677d0e20c21",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f63bb5e160410605d78478ab1e0a7665b549393ab228628fa737a5b0322cea56",
-				"dweb:/ipfs/QmToEvFkMXGMoVNHfRfwUSzVHyQxASVhVW6vkSRt6q1sqM"
+				"bzz-raw://b1e10eeb7c68dea1cf5bef5e002f7f91c5be8cc2d7cb47ee3cc209c28d0af719",
+				"dweb:/ipfs/QmfAUQ4dkPwDFebQdNqMNx4BWf7B6Bkm7E6nQYnpG55aZx"
 			]
 		}
 	},

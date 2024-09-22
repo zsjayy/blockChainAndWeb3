@@ -1,0 +1,137 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_getMessageHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "getEthSignedMessageHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "getMessageHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_getEthSignMessageHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_sig",
+						"type": "bytes"
+					}
+				],
+				"name": "recover",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_signer",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_sig",
+						"type": "bytes"
+					}
+				],
+				"name": "verifySig",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"40VerifySign.sol": "VerifySign"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"40VerifySign.sol": {
+			"keccak256": "0x0497e1ca4af688b432a5fb6aa6f0dace1c6670b7ebb6b87679999cf11c107f3b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ade0252d08d3027396bed2ef1f4c6afdd203101206571614db92d93d2f963fd1",
+				"dweb:/ipfs/QmS1NLZ9qevRuaxQeVNn14zAeXmkLXRZW1NW5xmyg8d74x"
+			]
+		}
+	},
+	"version": 1
+}

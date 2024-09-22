@@ -7,55 +7,41 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "example",
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "count1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "increment",
 				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "example2",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "externalFun",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "publicFun",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "z",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -72,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"30Visibility.sol": "C"
+			"36Interface2.sol": "Interface2"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"30Visibility.sol": {
-			"keccak256": "0x31908c6666b1fe313776542576c7a50df8ce2650d13d13ce6b562cba7e8b7a7e",
+		"36Interface2.sol": {
+			"keccak256": "0xedc4e4302d4f12b4b82b77a9088ba36958ff3b90c08bcf282be3cac0107bc77e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f63bb5e160410605d78478ab1e0a7665b549393ab228628fa737a5b0322cea56",
-				"dweb:/ipfs/QmToEvFkMXGMoVNHfRfwUSzVHyQxASVhVW6vkSRt6q1sqM"
+				"bzz-raw://04a77adb912d39b17603d2116d5c687921edf90c20ef5a4e56260bdd10cdd709",
+				"dweb:/ipfs/QmaJwVtzCXoS9fUoBMu4e3nLBrg5jXFDJLG222wDXnFyru"
 			]
 		}
 	},

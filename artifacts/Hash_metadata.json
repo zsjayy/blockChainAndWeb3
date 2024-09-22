@@ -1,0 +1,176 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text0",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "text1",
+						"type": "string"
+					}
+				],
+				"name": "collisionFunction",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text0",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "text1",
+						"type": "string"
+					}
+				],
+				"name": "encodeFunction",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text0",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "text1",
+						"type": "string"
+					}
+				],
+				"name": "encodePackedFunction",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text0",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "text1",
+						"type": "string"
+					}
+				],
+				"name": "fixCollisionFunction",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "hashFunction",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"39.Hash.sol": "Hash"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"39.Hash.sol": {
+			"keccak256": "0x03bee18319d406179879bc9a27558fab945b94c0a4f23b0597915e4750f9a14f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://33ea481b5fff0fdff7fc6f6b67edd9c0869723841f0720569c386943e3278682",
+				"dweb:/ipfs/QmR3SchsWhLDLeZouKPBMxBTmSffNnAR4J9mUANUhYmLdC"
+			]
+		}
+	},
+	"version": 1
+}

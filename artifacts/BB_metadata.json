@@ -6,46 +6,37 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [],
-				"name": "example",
-				"outputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "externalFun",
+				"name": "text",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "publicFun",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "z",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -65,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"30Visibility.sol": "B"
+			"28CallingParentConstructor.sol": "BB"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -79,12 +70,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"30Visibility.sol": {
-			"keccak256": "0x31908c6666b1fe313776542576c7a50df8ce2650d13d13ce6b562cba7e8b7a7e",
+		"28CallingParentConstructor.sol": {
+			"keccak256": "0x4de94276f3fe6a6cf30e4305cfd9c43344b1c0999cae3f070aea1f2ed08b1111",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f63bb5e160410605d78478ab1e0a7665b549393ab228628fa737a5b0322cea56",
-				"dweb:/ipfs/QmToEvFkMXGMoVNHfRfwUSzVHyQxASVhVW6vkSRt6q1sqM"
+				"bzz-raw://8d6fa83e475a4ae0152a982dbfa1cd7789ee9a7c283a0f1fa65d1da5ed1778d0",
+				"dweb:/ipfs/QmSyjoY6JrVUrhgDe1TCcDazU1NsGR1bgzXLzakWzpVgia"
 			]
 		}
 	},

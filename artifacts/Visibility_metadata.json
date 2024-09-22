@@ -14,13 +14,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "example2",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "externalFun",
 				"outputs": [
 					{
@@ -72,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"30Visibility.sol": "C"
+			"30Visibility.sol": "Visibility"
 		},
 		"evmVersion": "london",
 		"libraries": {},

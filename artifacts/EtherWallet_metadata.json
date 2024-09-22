@@ -7,56 +7,51 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "example",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryAccount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "example2",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "externalFun",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "publicFun",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "z",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -72,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"30Visibility.sol": "C"
+			"34EtherWallet.sol": "EtherWallet"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"30Visibility.sol": {
-			"keccak256": "0x31908c6666b1fe313776542576c7a50df8ce2650d13d13ce6b562cba7e8b7a7e",
+		"34EtherWallet.sol": {
+			"keccak256": "0xa1d016e2d2238f656e386f4baecf3867a4364bc2445f000eeaedce969d4851b2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f63bb5e160410605d78478ab1e0a7665b549393ab228628fa737a5b0322cea56",
-				"dweb:/ipfs/QmToEvFkMXGMoVNHfRfwUSzVHyQxASVhVW6vkSRt6q1sqM"
+				"bzz-raw://1bcd30260b85e5f5afed52928dbf3a4c5134798de62d1036a7d32925a5311a11",
+				"dweb:/ipfs/Qmd1U5HaEemGFkYLRNbXP93WCG95xkZV9xRxG2ip9jjb79"
 			]
 		}
 	},
