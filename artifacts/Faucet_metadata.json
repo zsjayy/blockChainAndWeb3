@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "requestAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "requestTokenLog",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isRequestedAddr",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requestToken",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferOver",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"42Faucet.sol": "Faucet"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"42ERC20.sol": {
+			"keccak256": "0x93b620fffed00b956e53c587afbd07ee1209617e9d09385302b85f01f1564023",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b68012e6184c953b9a71b9741c5956abccf65ba4e7a1f11e88e1f68f6b780bc1",
+				"dweb:/ipfs/QmdSRxCFViAqjfA1vbuQ8eRGvZsmoAaaHSn9cfaFQYCFvZ"
+			]
+		},
+		"42Faucet.sol": {
+			"keccak256": "0x520bd621f405a1755e832e77be893d00eca1467a0d9d4b620e35d36702d6361c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d3ba88e832080b1a78af474ac6fa9c4ce1708a543e80b18f0bf34e53d5d7aa9",
+				"dweb:/ipfs/QmTmKCUBqNSqRv6h4Qs3wJQNiyN9jDYenRsUQTVfgVXsXh"
+			]
+		},
+		"43IERC20.sol": {
+			"keccak256": "0xba573879a340452f214d80f4ff15947ef6d0b734aa8b122bb22d53833ade70ae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://10d6a8499724f2beb6b7e8d305feb6f5523771dd2753e93f6c7d5b746921e654",
+				"dweb:/ipfs/QmP3UGX4EvorzXV6CAcTp8QvW3SKZKkyxUayJjojb38oaJ"
+			]
+		}
+	},
+	"version": 1
+}
