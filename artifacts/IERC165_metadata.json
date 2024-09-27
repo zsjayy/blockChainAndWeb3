@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "ERC165标准接口, 详见 https://eips.ethereum.org/EIPS/eip-165[EIP]. 合约可以声明支持的接口，供其他合约检查",
+			"kind": "dev",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"IERC165.sol": "IERC165"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"IERC165.sol": {
+			"keccak256": "0x45a8d406479a7d825be238e44b861efdea3e85d997de99a1fa6dfca116890ed0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://682cc0bbe0b7ff9f8a5e404dc5bbd477d01fe99feaf47ced3f9e3aff1db301d7",
+				"dweb:/ipfs/QmQKjVzWxLysocrjvfqPsZB7vzabD1kytTDioSrrFnJqRN"
+			]
+		}
+	},
+	"version": 1
+}
