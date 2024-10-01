@@ -1,0 +1,204 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_startPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_endPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_nftContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_seller",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_who",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "buyLog",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "auction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "startPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "endPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "endTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "nftContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buy",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCurrentPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"45DA1.sol": "DA1"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"45DA1.sol": {
+			"keccak256": "0x831fa6d681bfe90355804b5a74788eb4a275c1b5abdf95e59ed403504cdacf75",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a38113a8a335a6797ae56f9da5fe7c24587ab0acee7010904c6937b814bb5b74",
+				"dweb:/ipfs/QmTQjimRZogLSev54a3bxaSAy6QhCQv2EoVcthE9R3nXnQ"
+			]
+		},
+		"IERC165.sol": {
+			"keccak256": "0x45a8d406479a7d825be238e44b861efdea3e85d997de99a1fa6dfca116890ed0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://682cc0bbe0b7ff9f8a5e404dc5bbd477d01fe99feaf47ced3f9e3aff1db301d7",
+				"dweb:/ipfs/QmQKjVzWxLysocrjvfqPsZB7vzabD1kytTDioSrrFnJqRN"
+			]
+		},
+		"IERC721.sol": {
+			"keccak256": "0xa5c7f83c8f428cc20b5e3ad82c0ccea73c831b8ffc97c03d4e879d49acc37ec4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ff05c1d251f8ff2ad9386d988a8e75be7fb42ac32399f59d0b2a0a2dda8a09b4",
+				"dweb:/ipfs/QmNqcy3iZrxygXsZnzgk3JNDVgRLvoYLa45N63JPmj11sB"
+			]
+		}
+	},
+	"version": 1
+}

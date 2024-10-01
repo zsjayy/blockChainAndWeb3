@@ -3,7 +3,7 @@ pragma solidity 0.8.7;
 //荷兰拍卖是随着时间递减价格下降 
 // 起始价格、最低价格、起始时间、结束时间、拍卖时长 
 // 用ERC721铸造代币，将代币转给荷兰拍卖的合约，有人拍得后就把这个代币发给拍得者 
-import "./ERC721.sol"; 
+import "./IERC721.sol";
 
 contract DutchAuction is ERC721{ 
     //immutable--是限制变量不可变。即这个变量一旦被赋值就不可更改
