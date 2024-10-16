@@ -1,13 +1,65 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"name": "enumToUnit",
+				"name": "addr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "b",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "b32",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "i",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "u",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -32,9 +84,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"01valueTypes.sol": "valueTypes"
+			"02ValueTypes.sol": "ValueTypes"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -46,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"01valueTypes.sol": {
-			"keccak256": "0x349e135a3365c83a17481bf676250fcc523f69c2df8d5b32f23e6b91ed16ddc1",
+		"02ValueTypes.sol": {
+			"keccak256": "0x757300b2c5180ebc2aefb871d1fd967da3e0f744dbd1323826f2e2af8a23339b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://18d34c224f226b3e35cbb0a1cb01f7dab8daa2b3bf905095e59f698cd4635198",
-				"dweb:/ipfs/QmU5gSHLXpRwzBCB45NDRgP6EKE7aonFFmgHemXWN8nRFg"
+				"bzz-raw://d6f5848be8eacd009be74c4df1ad445948cc4b834666042d36dd288177d06c20",
+				"dweb:/ipfs/QmYfLKZKCi9dACo9aYMp1TtWptoPMNiRDAWT83LF1aKffr"
 			]
 		}
 	},
