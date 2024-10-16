@@ -37,3 +37,14 @@ For unsupported modules, an error like this will be thrown: '<module_name> modul
 ![alt text](image-1.png)
 交易：
 ![alt text](image-2.png)
+初始会有添加流动性的人往pair合约添加
+uniswap的合约核心是工厂合约，pair合约是通过工厂合约进行部署的（不需要部署pair合约）
+路由合约==》工厂合约/pair合约
+工厂合约动态部署配对合约
+先部署工厂合约再部署路由合约
+实际操作步骤（结合智能合约）：
+1、使用ERC20合约铸造两种代币：TT、SS，每种代币100000000，并记录代币合约的地址A、B
+![alt text](image-3.png)![alt text](image-4.png)![alt text](image-5.png)
+2、添加流动性，分别注入1000个TT、SS，此时兑换比例是1:1
+![alt text](image-6.png)![alt text](image-7.png)![alt text](image-8.png)![alt text](image-9.png)
+参考 [text](https://github.com/Fankouzu/my-uniswap-v2-core/blob/master/Deploy.md)
