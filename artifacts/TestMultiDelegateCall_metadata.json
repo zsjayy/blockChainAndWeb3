@@ -101,14 +101,14 @@
 		"compilationTarget": {
 			"47MultiDelegateCall.sol": "TestMultiDelegateCall"
 		},
-		"evmVersion": "london",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
-			"runs": 200
+			"enabled": true,
+			"runs": 999999
 		},
 		"remappings": []
 	},

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT 
 pragma solidity 0.7.4; 
-import "./.deps/npm/@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 // 触发fallback() 还是 receive()?
 //            接收ETH

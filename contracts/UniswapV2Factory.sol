@@ -60,10 +60,12 @@ contract UniswapV2Factory is IUniswapV2Factory {
             pair := create2(0, add(bytecode, 32), mload(bytecode), salt)
         }
         //调用pair地址的合约中的"initialize"方法,传入变量token0,token1
+        //Jay:内联汇编加这一步是对pair合约进行初始化操作
         IUniswapV2Pair(pair).initialize(token0, token1);
         //配对映射中设置token0=>token1=pair
         getPair[token0][token1] = pair;
         //配对映射中设置token1=>token0=pair
+        //Jay:注意这里要加两个方向
         getPair[token1][token0] = pair; // populate mapping in the reverse direction
         //配对数组中推入pair地址
         allPairs.push(pair);

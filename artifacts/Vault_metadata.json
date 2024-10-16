@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_shares",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"51Vault.sol": "Vault"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 999999
+		},
+		"remappings": []
+	},
+	"sources": {
+		"43IERC20.sol": {
+			"keccak256": "0xba573879a340452f214d80f4ff15947ef6d0b734aa8b122bb22d53833ade70ae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://10d6a8499724f2beb6b7e8d305feb6f5523771dd2753e93f6c7d5b746921e654",
+				"dweb:/ipfs/QmP3UGX4EvorzXV6CAcTp8QvW3SKZKkyxUayJjojb38oaJ"
+			]
+		},
+		"51Vault.sol": {
+			"keccak256": "0xbf88fc478309b04764d16449e75a430e581952e92ee0b09f1f6f838bf310c78f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2bf5868c7a8d7da6663557bebe18e96f424875960361fce756de6349ca539774",
+				"dweb:/ipfs/QmYAjVChbCL57wTpvUNZcVhfeyn56BdZ5Je4faYgJ1KiEw"
+			]
+		}
+	},
+	"version": 1
+}
