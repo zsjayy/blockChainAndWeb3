@@ -435,14 +435,14 @@
 		"compilationTarget": {
 			"Mytoekn.sol": "Mytoken"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
-			"runs": 999999
+			"enabled": false,
+			"runs": 200
 		},
 		"remappings": []
 	},

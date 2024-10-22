@@ -103,14 +103,14 @@
 		"compilationTarget": {
 			"51Vault.sol": "Vault"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
-			"runs": 999999
+			"enabled": false,
+			"runs": 200
 		},
 		"remappings": []
 	},
@@ -124,11 +124,11 @@
 			]
 		},
 		"51Vault.sol": {
-			"keccak256": "0xbf88fc478309b04764d16449e75a430e581952e92ee0b09f1f6f838bf310c78f",
+			"keccak256": "0x5e8611b6aba842f525b4cc49671befe8fa3c7f80efd8bf8fe21f32164e522fe4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2bf5868c7a8d7da6663557bebe18e96f424875960361fce756de6349ca539774",
-				"dweb:/ipfs/QmYAjVChbCL57wTpvUNZcVhfeyn56BdZ5Je4faYgJ1KiEw"
+				"bzz-raw://0f35634e716f01c5bd8bd743bda4e41cbc75ec3147b8b921b17232f41683d552",
+				"dweb:/ipfs/QmS2Tr3RqybmCi43kjgJuwitc1YTnLq63BrJKBxyYR7YLR"
 			]
 		}
 	},
