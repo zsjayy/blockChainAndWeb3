@@ -61,7 +61,7 @@
 						"type": "address"
 					}
 				],
-				"name": "eraned",
+				"name": "earned",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -343,11 +343,11 @@
 			]
 		},
 		"52StakingRewards.sol": {
-			"keccak256": "0x81cc21fc2d9a057b9436df7f9c99b5f2b366c6f71029169e62d53d2c3464d34f",
+			"keccak256": "0x3f278002930aa1b3bdf50fe17989fd006d9b1f48694586c62545ce9513799f96",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a66e9a87d87f42f3d287819b4ce8b927e489fe84c9c0070b1a5c1059608e475a",
-				"dweb:/ipfs/QmPaTtLzdGb98VzRzeJmdamLdpczfr9mXkuA5bURSPTr5w"
+				"bzz-raw://1a7d7444b761d41355a90934051e3a8c918433565aae758752e1864fdc77037f",
+				"dweb:/ipfs/QmcxbWdU3LjdK38BzijFgCwd4TyPSuFfjc7rSWfXxUYgKa"
 			]
 		}
 	},

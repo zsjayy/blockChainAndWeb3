@@ -35,6 +35,18 @@ contract StakingRewards{
         _;
     }
 
+    modifier updateReward(address _account){
+        rewardPerTokenStored = rewardPerToken();
+        updatedAt = lastTimeRewardApplicable();
+
+        if(_account != address(0)){
+            rewards[_account] = earned(_account);
+            userRewardPerTokenPaid[_account] = rewardPerTokenStored;
+        }
+
+        _;
+    }
+
     constructor(address _stakingToken, address _rewardToken){
         owner = msg.sender;
         stakingToken = IERC20(_stakingToken);
@@ -48,7 +60,7 @@ contract StakingRewards{
         duration = _duration;
     }
     //设置期限内要支付的奖金
-    function notifyRewardAmount(uint _amount) external onlyOwner{
+    function notifyRewardAmount(uint _amount) external onlyOwner updateReward(address(0)){
         //当前合约在有效期内
         if(block.timestamp > finishAt){ 
             //说明合约已经失效或者还没开始，这个时候奖励率为
@@ -66,7 +78,7 @@ contract StakingRewards{
         updatedAt = block.timestamp;
     }
     //用户质押代币
-    function stake(uint _amount) external {
+    function stake(uint _amount) external updateReward(msg.sender){
         require(_amount > 0,"_amount = 0");
         stakingToken.transferFrom(msg.sender,address(this),_amount);
         //用户质押的代币数量
@@ -76,7 +88,7 @@ contract StakingRewards{
 
     }
     //用户提取代币
-    function withdraw(uint _amount) external {
+    function withdraw(uint _amount) external updateReward(msg.sender) {
         require(_amount > 0,"_amount = 0");
         balanceOf[msg.sender] -= _amount;
         totalSupply -= _amount;
@@ -93,11 +105,17 @@ contract StakingRewards{
         return rewardPerTokenStored + rewardRate * (lastTimeRewardApplicable() - updatedAt) * 1e18 /totalSupply;
     }
     //用户赚取的奖励金额
-    function eraned(address _account)external view returns(uint) {
-        return balanceOf[_account] * ((rewardPerToken() - userRewardPerTokenPaid[_account])/ 1e18) + rewards[_account];
+    function earned(address _account) public view returns(uint) {
+        return (balanceOf[_account] * (rewardPerToken() - userRewardPerTokenPaid[_account]))/ 1e18 + rewards[_account];
     }
     //
-    function getReward() external {}
+    function getReward() external updateReward(msg.sender){
+        uint reward = rewards[msg.sender];
+        if(reward > 0){
+            rewards[msg.sender] = 0;
+            rewardToken.transfer(msg.sender, reward);
+        }
+    }
 
     function min(uint x,uint y) private pure returns(uint){
         return x<=y?x:y;
